@@ -7,6 +7,7 @@ var engine, world;
 var holder,polygon,ground;
 var stand1,stand2;
 var polygon;
+var score = 0;
 var slingShot;
 var polygon_img;
 function preload(){
@@ -67,11 +68,11 @@ function draw() {
   background("black"); 
  
   //Engine.update(engine);
-  text(mouseX + ',' + mouseY, 10, 15);
-  textSize(20);
   
-  textSize(10);
-  text("Press Space to get a second Chance to Play!!",650 ,350);
+  textSize(25);
+  
+  
+  text("Score"+score,400 ,100);
   ground.display();
   stand1.display();
   stand2.display();
