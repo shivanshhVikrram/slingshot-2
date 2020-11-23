@@ -17,6 +17,9 @@ class Block{
      
       display(){
         console.log(this.body.speed);
+        if (this.visibility<0 && this.visibility>-500){
+          score++
+        }
         if(this.body.speed <3){
         var angle = this.body.angle;
         var pos= this.body.position;
